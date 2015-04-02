@@ -1,0 +1,81 @@
+<div ng-controller="curatorListCtr">
+		<header>
+			<nav class="navbar nav-header no-margin">
+				<div class="container">
+					<h1><i class="fa fa-microphone fa-lg"></i> 전시 도우미 서비스</h1>
+				</div>
+			</nav>
+		</header>
+		<!--/header-->
+		<!--본문전체-->
+		<div class="container sub-wrap">
+			<div class="col-xs-12 l-padding">
+				<a href="/curatorView"><div class="cu-list-wrap">
+				<img src="src/assets/img/cu-img.png" class="img-responsive col-xs-2 no-padding">
+				<p class="col-xs-3 no-padding p-name">Mr.Moon</p>
+				<p class="col-xs-7 no-padding">4F</p>
+			</div></a>
+
+			<a href="/curatorView"><div class="cu-list-wrap">
+				<img src="src/assets/img/cu-img.png" class="img-responsive col-xs-2 no-padding">
+				<p class="col-xs-3 no-padding p-name">Mr.Moon</p>
+				<p class="col-xs-7 no-padding">4F</p>
+			</div></a>
+			<a href="/curatorView"><div class="cu-list-wrap">
+				<img src="src/assets/img/cu-img.png" class="img-responsive col-xs-2 no-padding">
+				<p class="col-xs-3 no-padding p-name">Mr.Moon</p>
+				<p class="col-xs-7 no-padding">4F</p>
+			</div></a>
+			<a href="/curatorView"><div class="cu-list-wrap">
+				<img src="src/assets/img/cu-img.png" class="img-responsive col-xs-2 no-padding">
+				<p class="col-xs-3 no-padding p-name">김민정</p>
+				<p class="col-xs-7 no-padding">3F</p>
+			</div></a>
+			<a href="/curatorView"><div class="cu-list-wrap">
+				<img src="src/assets/img/cu-img.png" class="img-responsive col-xs-2 no-padding">
+				<p class="col-xs-3 no-padding p-name">성시원</p>
+				<p class="col-xs-7 no-padding">성시원 입니다.<br> 4층전시관 설명중입니다.</p>
+			</div></a>	
+			<!-- 방생성버튼-->
+			<button class="btn btn-style"  data-toggle="modal" data-target="#info-input"><i class="fa fa-plus-circle"> </i> 방 생성</button>	
+			<!-- /방생성버튼 -->			
+			</div>
+			<!-- /.col-xs-12 -->
+
+			
+			<!-- 정보입력모달 -->
+			<div class="modal fade" id="info-input" tabindex="-1" role="dialog" aria-labelledby="info-inputLabel" aria-hidden="true">
+				<div class="modal-dialog">
+					<div class="modal-content modal-style">
+						<div class="modal-header">							
+							<button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+								×
+							</button>
+							<h4 class="modal-title text-center no-margin" style="font-size:14px; padding-bottom:3px;"><i class="fa fa-caret-right"></i> 정보입력</h4>
+						</div>
+						 <div class="modal-body">
+        <div class="col-xs-12 no-padding" style="padding-right:4px;">
+        	<form class="form-horizontal input-style02" role="form">
+  <div class="form-group">
+    <label for="inputEmail1" class="col-xs-4 control-label text-right">설명</label>
+    <div class="col-xs-8">
+     <textarea id="inputEmail1" class="form-control" rows="3"></textarea>
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="inputPassword1" class="col-xs-4 control-label text-right">비밀코드</label>
+    <div class="col-xs-8">
+      <input type="password" class="form-control" id="inputPassword1">
+    </div>
+  </div>
+ </form>	
+ 
+ <button class="btn btn-style btn-block"><i class="fa fa-plus-circle"> </i> 방 생성</button>
+        </div>
+      </div>     
+					</div><!-- /.modal-content -->
+				</div><!-- /.modal-dialog -->
+			</div><!--  정보입력모달 -->
+
+		</div><!--/본문전체-->
+</div>

@@ -1,0 +1,50 @@
+<div ng-controller="footerCtr">
+<!--모달 버튼-->
+<div class="navbar-fixed-bottom">
+    <a href="#" data-toggle="modal" data-target="#modal-menu"><div class="menu-btn pull-right"><i class="fa fa-bars"></i>
+    </div></a>
+</div>
+<!--모달버튼 끝-->
+<!-- Modal -->
+<div class="modal fade" id="modal-menu" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content modal-style">
+            <div class="modal-header">
+                <p class="pull-left no-margin"><a href="" style="color:#cbb9c7; text-shadow: 0 1px 0 #222222;" data-dismiss="modal" ng-click="modalClick(0)"><i class="fa fa-home fa-lg"></i></a>
+                </p>
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                    ×
+                </button>
+                <h4 class="modal-title text-center"><i class="fa fa-caret-right"></i> 메뉴</h4>
+            </div>
+            <div class="modal-body">
+                <div class="col-xs-6 no-padding" style="padding-right:4px;">
+                    <a href=""><button class="btn btn-block btn-modal" data-dismiss="modal" ng-click="modalClick(1);"> 전시품
+                        <br>
+                        <small>exhibition</small></button>	</a>
+                </div>
+                <div class="col-xs-6 no-padding" style="padding-left:4px;">
+                    <a href=""><button class="btn btn-block btn-modal" data-dismiss="modal" ng-click="modalClick(2);">큐레이터
+                        <br>
+                        <small>curator</small></button></a>
+                </div>
+                <div class="col-xs-4 no-padding" style="padding-right:4px;">
+                    <a href=""> <button class="btn btn-block btn-modal" data-dismiss="modal" ng-click="modalClick(3);">소개글
+                        <br>
+                        <small>introduction</small></button></a>
+                </div>
+                <div class="col-xs-4 no-padding" style="padding-left:4px;">
+                    <a href=""><button class="btn btn-block btn-modal" data-dismiss="modal" ng-click="modalClick(4);">특별이벤트
+                        <br>
+                        <small>event</small></button></a>
+                </div>
+                <div class="col-xs-4 no-padding" style="padding-left:4px;">
+                    <a href=""> <button class="btn btn-block btn-modal" data-dismiss="modal" ng-click="modalClick(5);">설문조사
+                        <br>
+                        <small>survey</small></button></a>
+                </div>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+</div>
